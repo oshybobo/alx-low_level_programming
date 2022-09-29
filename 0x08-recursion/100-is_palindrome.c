@@ -16,6 +16,7 @@ int compare(char *head, char *tail)
 	{
 		return (compare(head + 1, tail - 1));
 	}
+	return (0);
 }
 
 /**
