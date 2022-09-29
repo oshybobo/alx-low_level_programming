@@ -29,7 +29,7 @@ int substring_match(char *s1, char *s2, char *after_wldcd)
 	}
 	else
 	{
-		return (subtring_match(s1 + 1, after_wldcd, after_wldcd));
+		return (substring_match(s1 + 1, after_wldcd, after_wldcd));
 	}
 }
 
