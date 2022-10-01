@@ -1,19 +1,17 @@
 #include "main.h"
 
 /**
- * main - print arg to a new line
+ * main - print number of args passed
  * @argc: counter arg
  * @argv: pointer to arrat
  * Return: 0 on sucess
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i = 0;
-
-	while (i < argc)
+	if (argc > 0)
 	{
-		printf("%s\n", argv[i++]);
+		printf("%d\n", argc - 1);
 	}
 	return (0);
 
