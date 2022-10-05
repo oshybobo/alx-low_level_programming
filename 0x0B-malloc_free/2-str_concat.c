@@ -15,31 +15,21 @@ char *str_concat(char *s1, char *s2)
 	char *s;
 
 	if (s1 == NULL)
-	{
 		s1 = "";
-	}
 
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
 
 	while (s1[i] != '\0')
-	{
 		i++;
-	}
 
 	while (s2[j] != '\0')
-	{
 		j++;
-	}
 
 	s = malloc((i * sizeof(char)) + ((j + 1) * sizeof(char)));
 
 	if (s == NULL)
-	{
 		return (NULL);
-	}
 
 	for (c = 0; s1[c] != '\0'; c++)
 	{
