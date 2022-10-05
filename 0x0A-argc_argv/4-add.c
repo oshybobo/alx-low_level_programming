@@ -29,9 +29,10 @@ bool is_num(char *argvv)
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i = 1;
+	int sum = 0;
+	int i = 1;
 
-	if (argc == i)
+	if (argc == 1)
 	{
 		printf("0\n");
 		return (0);
@@ -39,9 +40,9 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if (is_num(argv[i]) == 0)
+		if (is_num(argv[i]))
 		{
-			sum = sum + atoi(argv[i]);
+			sum += atoi(argv[i]);
 		}
 		else
 		{
