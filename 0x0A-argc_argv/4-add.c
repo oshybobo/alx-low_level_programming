@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdbool.h>
+#include <stdio.h>
 /**
  * is_num - iterate to check if it is num
  * @argvv: a argv
@@ -30,7 +31,7 @@ int main(int argc, char *argv[])
 {
 	int sum = 0, i = 1;
 
-	if (argc == 1)
+	if (argc == i)
 	{
 		printf("0\n");
 		return (0);
