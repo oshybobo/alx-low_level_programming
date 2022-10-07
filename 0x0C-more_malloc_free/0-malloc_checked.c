@@ -2,11 +2,11 @@ include "main.h"
 
 /**
  * *malloc_checked - allocates memory
- * @a: size to malloc
+ * @b: size to malloc
  * Return: pointer to allocated mem
  */
 
-void *malloc_checked(unsigned int a)
+void *malloc_checked(unsigned int b)
 {
 	void *p;
 
