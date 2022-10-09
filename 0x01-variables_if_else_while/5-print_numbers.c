@@ -2,7 +2,7 @@
 
 /**
  * main - entry point - function prints out all single digits of base 10
- * 			starting from 0, followed by new line
+ *			starting from 0, followed by new line
  * Return: 0 Always
  */
 
