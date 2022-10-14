@@ -1,4 +1,4 @@
-#include <stdargh.h>
+#include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
@@ -8,7 +8,7 @@
  * Return: sum of all n
  */
 
-int sum_them_all(cost unsigned int n, ...)
+int sum_them_all(const unsigned int n, ...)
 {
 	va_list valist;
 	unsigned int sum = 0, i;
