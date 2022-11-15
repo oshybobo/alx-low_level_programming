@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 
 /**
  * _putchar - function writes c to i/o
@@ -7,10 +8,10 @@
  * Return: returns single c
  */
 
-int _putchar(char c)
+/*int _putchar(char c)
 {
 	return (write(1, &c, 1));
-}
+}*/
 
 /**
  * main - print _putchar followed by new line
