@@ -1,11 +1,11 @@
 #include "lists.h"
 
 /**
- * free_listint2 - frees a list and sets head to NULL
- * @head: head of list
- *
- * Return: void
- */
+* free_listint2 - frees a list and sets head to NULL
+*
+* @head: head of list
+* Return: void
+*/
 void free_listint2(listint_t **head)
 {
 	listint_t *temp;
@@ -13,7 +13,7 @@ void free_listint2(listint_t **head)
 	if (!head)
 		return;
 	if (!(*head))
-		return;
+	return;
 
 	while ((*head)->next)
 	{
@@ -24,4 +24,3 @@ void free_listint2(listint_t **head)
 	free(*head);
 	*head = NULL;
 }
-

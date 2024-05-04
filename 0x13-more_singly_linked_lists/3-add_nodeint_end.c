@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- * add_nodeint_end - adds a node at the end of list
- * @head: first node of list
- * @n: int to make content of new node
- *
- * Return: address of new element or NULL if failed
- */
+* add_nodeint_end - adds a node at end of list
+*
+* @head: first node of list
+* @n: int to make content of new node
+* Return: address of new element or NULL if failed
+*/
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
 	listint_t *new_node;
@@ -14,7 +14,7 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	new_node = malloc(sizeof(listint_t));
 	if (!new_node)
-		return (NULL);
+	return (NULL);
 	new_node->n = n;
 	new_node->next = NULL;
 
@@ -25,9 +25,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	{
 		copy = *head;
 		while (copy->next)
-		{
-			copy = copy->next;
-		}
+	{
+		copy = copy->next;
+	}
 		copy->next = new_node;
 	}
 	else
@@ -37,4 +37,3 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 	return (new_node);
 }
-

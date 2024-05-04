@@ -1,21 +1,20 @@
 extern printf
-global main
+	global main
 
-section .text
+	section .text
 main
-push rbp
+	push rbp
 
-mov rdi, fmt
-mov rsi, msg
-mov rax, 0
-call printf
+	mov rdi, fmt 		;arg3, length of string
+	mov rsi, msg 		;arg2, pointer to string
+	mov rax, 0 		;arg1, write to screen
+	call printf
 
-pop rbp
+	pop rbp
 
-mov rax, 0
-ret
+	mov rax,0
+	ret
 msg:
-db "Hello, Holberton", 0
+	db "Hello, Holberton", 0
 fmt:
-db "%s", 10, 0
-
+	db "%s", 10, 0

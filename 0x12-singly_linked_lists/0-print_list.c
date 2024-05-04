@@ -3,40 +3,35 @@
 #include "lists.h"
 
 /**
- * print_list - prints all elements of a list
- * @h: a list to print elements
- *
- * Return: the number of nodes in list
- */
+* print_list - prints all elements of a list
+* @h: a list to print elements
+* Return: the number of nodes in list
+*/
 size_t print_list(const list_t *h)
 {
-	int i = 0, ret = 1;
-	char nul[] = "(nil)";
+int i = 0, ret = 1;
+char nul[] = "(nil)";
 
-	if (!h)
-		return (0);
-	if (h->str)
-		i = _strlen(h->str);
-	printf("[%d] ", i);
+if (!h)
+	return (0);
+if (h->str)
+	i = _strlen(h->str);
+printf("[%d] ", i);
 
-	if (!h->str)
-		printf("%s\n", nul);
-	else
-		printf("%s\n", h->str);
-	if (h->next)
-		ret += print_list(h->next);
-	return (ret);
+if (!h->str)
+	printf("%s\n", nul);
+else
+	printf("%s\n", h->str);
+if (h->next)
+	ret += print_list(h->next);
+return (ret);
 }
 
 /**
- * _strlen - finds string length
- * @str: string
-<<<<<<< HEAD
- *
-=======
->>>>>>> cc0534b0cc54afd9659104b07271298c9c0feaa1
- * Return: length of string
- */
+* _strlen - finds string length
+* @str: string
+* Return: length of string
+*/
 int _strlen(char *str)
 {
 	int i;
@@ -45,4 +40,3 @@ int _strlen(char *str)
 		i++;
 	return (i);
 }
-
